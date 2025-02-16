@@ -1,0 +1,454 @@
+body{
+    background-color: rgb(240, 85, 85);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color: #fff;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+}
+
+
+section{
+    background-color: #ebeeee;
+}
+
+
+footer{
+    background-color: #d6dcdc;
+    padding: 2%;
+}
+
+
+
+
+/* LOGO, MENU E RODAPÉ */
+.logo{
+    width: 20%;
+}
+
+
+.cabecalho{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    background-color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+
+
+nav ul li {
+    margin: 0 10px;
+}
+
+
+nav ul li a {
+    color: #00d9ff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+
+nav ul li a:hover {
+    transition: 0.7s;
+    color: purple;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+
+  #checkbox-menu{
+    position: absolute;
+    opacity: 0;
+  }
+ 
+  #lblMenu{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+  }
+ 
+  label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #fff;
+    transition: 0.25s ease-in-out;
+  }
+
+
+.rodape{
+    padding: 2%;
+}
+
+
+
+
+/* TEXTOS */
+h2{
+    line-height: 3;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+p{
+    line-height: 1.5;
+    font-size: 1.2em;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 2%;
+}
+
+
+
+
+/* GALERIA DE IMAGENS QUE MEXE */
+.galeria{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    padding: 2%;
+}
+
+
+.galeria > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+
+.galeria > div:hover{
+    flex: 5;
+}
+
+
+
+
+/* PRIMEIRA SECTION */
+
+
+.primeira{
+    background-color: #66dae3;
+}
+
+
+.texto1{
+    color: #17757c;
+}
+
+
+.primeiroh2{
+    color:#0b4a4e;
+}
+
+
+
+
+/* SEGUNDA SECTION */
+.segunda{
+    background-color: orange;
+}
+
+
+
+
+
+
+
+
+/* TERCEIRA SECTION */
+.terceira{
+    background-color: #ac6ca5;
+}
+
+
+.segundoh2{
+    color: #662961;
+}
+
+
+.texto2{
+    color:#662961 ;
+}
+
+
+
+
+
+
+/* QUARTA SECTION */
+.quarta{
+    background-color: #189b2e;
+}
+
+
+.terceiroh2{
+    color:#05380e
+}
+
+
+.texto3{
+    color:#13441c
+}
+
+
+/* FAMILIA */
+.h2_familia{
+    color: darkred;
+}
+
+
+.familia{
+    background-color: rgb(240, 85, 85);
+    margin-bottom: 2%;
+}
+
+
+.h3-familia{
+    color: rgb(168, 21, 21) ;
+}
+
+
+h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 2%;
+}
+
+
+.p_familia{
+    color: rgb(97, 11, 11);
+}
+
+
+/* GALERIA DE IMAGENS */
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: auto;
+    margin-left: 20%;
+    flex-wrap: row wrap;
+}
+
+
+.col3{
+    width: 40%;
+}
+
+
+.imggaleria{
+    width: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+/* EMOCOES ANTIGAS */
+.emocoes_antigas{
+    background-color: #1838c7;
+}
+
+
+.h2_old{
+    color: #071349;
+}
+
+
+.emocoes_old{
+    color: #071349;
+}
+
+
+.texto_old{
+    color: #040d36 ;
+}
+
+
+
+
+/* NOVAS EMOCOES */
+.novas_emocoes{
+    background-color: rgb(206, 209, 0);
+}
+
+
+.h2_new{
+    color: rgb(99, 100, 0);
+}
+
+
+.texto_new{
+    color: rgb(99, 100, 0);
+}
+
+
+.nomes_novas{
+    color:rgb(99, 100, 0) ;
+}
+
+
+/* imagens das emoções */
+.emocoesjuntas{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 20%;
+}
+
+
+:target {
+    scroll-margin-top: 84px;
+  }   /* PARAR ONDE EU QUERO */
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* MEDIA */
+@media screen and (max-width: 800px ){
+    .menu-icon {
+        display: block;
+        padding-right: 10px;
+    }
+
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        padding: 0;
+    }
+
+
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+
+    nav ul li a {
+        padding: 15px 0;
+    }
+
+
+    nav ul li label {
+        width: 100%;
+        display: block;
+    }
+
+
+}
+
+
+@media(max-width: 700px){
+    .direita{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+
+
+    .emocoesjuntas{
+        width: 50%;
+    }
+
+
+    h2{
+        font-size: 1.5em;
+    }
+
+
+    .primeiroh2{
+        margin-top: 15%;
+    }
+}
+ 
+@media(min-width: 700px ){
+    .direita{
+        float:right;
+        width: 33%;
+        margin-left: 2%;
+        padding: 2%;
+    }
+}
+
+
+@media(min-width: 1440px){
+    .direita{
+        width: 20%;
+    }
+}
+
+
+@media(min-width: 1800px){
+    .direita{
+        width:20%;
+        display: block;
+    }
+   
+}
